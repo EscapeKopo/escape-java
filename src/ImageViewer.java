@@ -14,8 +14,8 @@ public class ImageViewer {
         frame.add(label);
         frame.setSize(520, 340);
         frame.setLocation(50, 50);
-        frame.setAlwaysOnTop(true);
         frame.setVisible(true);
+        frame.setAlwaysOnTop(true);
     }
 
     public void showImage(String path) {
@@ -25,5 +25,7 @@ public class ImageViewer {
         ImageIcon changeIcon = new ImageIcon(changeImg);
 
         label.setIcon(changeIcon);
+
+        frame.toFront();
     }
 }
