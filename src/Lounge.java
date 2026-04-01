@@ -14,6 +14,7 @@ public class Lounge {
         }
 
         System.out.println("게임이 종료되었습니다.");
+        System.exit(0);
     }
 
     private void showMenu() {
@@ -105,7 +106,8 @@ public class Lounge {
     }
 
     private void moveToServer() {
-            Server server = new Server();
+            Server server = new Server(sc, viewer);
             server.enter();
     }
+
 }
